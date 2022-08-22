@@ -34,7 +34,6 @@ header, section{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: none;
 }
 
 .logo{
@@ -183,8 +182,10 @@ img{
   max-width: 300px;
   background-color: #000;
   border-radius: 40px;
-  padding: 30px 8px;
+  padding: 30px 12px;
   margin: 20px 0px;
+  color: #fff;
+  text-align: center;
 }
 
 .form__group{
