@@ -12,17 +12,24 @@
 <body>
   <header class="header">
     <div class="header__left">
-      <div class="logo">Isaac</div>
-      <div class="nav">
-        <span class="nav__link"><a href="">Home</a></span>
-        <span class="nav__link"><a href="">About</a></span>
-        <span class="nav__link"><a href="">Projects</a></span>
-        <span class="nav__link"><a href="">Contact</a></span>
+      <div class="mobile-menu">
+        <div class="logo">Isaac </div>
+        <div class="menu-btn" onclick="toggleMenu()">
+          +++
+        </div>
+      </div>
+      <div class="nav nav-responsive">
+          <span class="nav__link"><a href="">Home</a></span>
+          <span class="nav__link"><a href="">About</a></span>
+          <span class="nav__link"><a href="">Projects</a></span>
+          <span class="nav__link"><a href="">Contact</a></span>
+        <div class="float">
+          <a href="" class="header__btn btn">Hire Me</a>
+        </div>
       </div>
     </div>
-    <a href="" class="header__btn btn">Hire Me</a>
+  
   </header>
-
   <section id="home" class="home">
     <div class="home__title">A Front End Developer</div>
     <div class="home__description">
@@ -33,7 +40,6 @@
       <a href="#about" class="home__btn-contact btn">Contact Me</a>
     </div>
   </section>
-
   <section id="about" class="about">
     <div class="about__description">
       <div class="title">About Me</div>
@@ -53,7 +59,6 @@
       <img src="./assets/dev.svg" alt="">
     </div>
   </section>
-
   <section id="projects" class="project">
     <div class="project__section">
       <h1 class="project__title">Projects</h1>
@@ -61,11 +66,9 @@
       <div class="project__container">
         <div class="card">project 1</div>
         <div class="card"> prject 2</div>
-        <div class="card"> project 3</div>
       </div>
     </div>
   </section>
-
   <section id="contact" class="contact">
     <div class="contact__container">
       <div class="form">
@@ -101,7 +104,22 @@
         <p>Any programming challenges you want me to try, I'm in.</p>
       </div>
     </div>
+    <div class="footer">
+      <h3>Find me on social media.</h3>
+      <p>github, linkedin</p>
+      <hr>
+      <p>&copy; 2022 Isaac Malebana</p>
+    </div>
   </section>
+ <script>
+   const toggleMenu = () => {
+     document.querySelectorAll(".nav-responsive").forEach(el => {
+      el.style.height = el.style.height != "auto" ? "auto" : 0
+      if(el.style.height === "auto"){
+        el.style.position = "absolute";
+      }
+     })
+   }
+ </script>
 </body>
-
 </html>
