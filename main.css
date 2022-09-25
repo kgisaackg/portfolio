@@ -172,6 +172,38 @@ img{
   flex-basis: 48%;
   background-color: #000;
   margin-bottom:  20px;
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+
+.card__image{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card__overlay{
+  position: absolute;
+  background-color: #000;
+  display: flex;
+  transition: all 0.2s ease;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.overlay-content{
+  margin: auto;
+}
+
+.card:hover .card__overlay {
+  opacity: 1;
+  width: 100%;
+  margin: auto;
 }
 
 .contact{
