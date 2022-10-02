@@ -20,16 +20,16 @@
         </div>
       </div>
       <div class="nav nav-responsive">
-          <span class="nav__link"><a href="#home">Home</a></span>
-          <span class="nav__link"><a href="#about">About</a></span>
-          <span class="nav__link"><a href="#projects">Projects</a></span>
-          <span class="nav__link"><a href="#contact">Contact</a></span>
+        <span class="nav__link"><a href="#home">Home</a></span>
+        <span class="nav__link"><a href="#about">About</a></span>
+        <span class="nav__link"><a href="#projects">Projects</a></span>
+        <span class="nav__link"><a href="#contact">Contact</a></span>
         <div class="float">
           <a href="#contact" class="header__btn btn">Hire Me</a>
         </div>
       </div>
     </div>
-  
+
   </header>
   <section id="home" class="home">
     <div class="home__title">A Front End Developer</div>
@@ -47,12 +47,12 @@
       <div class="title-line"></div>
       <div class="info description-middle">
         Hey there, I'm Isaac Malebana a Frontend developer with an understanding
-        of backend development. I find joy in creating websites for businesses 
+        of backend development. I find joy in creating websites for businesses
         or debbuging whatever codebase I have.
       </div>
       <div class="info">
-       I enjoy writting code to solve real world problems, wether is creating
-       a website, landing page or web application.
+        I enjoy writting code to solve real world problems, wether is creating
+        a website, landing page or web application.
 
       </div>
     </div>
@@ -69,8 +69,16 @@
           <img class="card__image" src="./assets/portfolio pic.PNG" alt="">
           <div class="card__overlay">
             <div class="overlay-content">
-
-              hello world isaac adf asf dsa
+              Agrisolution is a project created for farmers, agricultural professionals,
+              and financial advisers to have a platform where they can get farming solutions,
+              it includes chat, a blog, and getting weather information functionality.
+              The project is created in angular, tailwind, and firebase.
+              <br>
+              <p> Project is created in angular, tailwind and firebase.</p>
+              <a class="overlay-content__link btn" href="https://the-agri-solutions.web.app/" target="_blank"
+                rel="noopener noreferrer">View Project</a>
+              <a class="overlay-content__link btn" href="http://" target="_blank" rel="noopener noreferrer">View
+                Source</a>
             </div>
           </div>
         </div>
@@ -123,16 +131,16 @@
       <p>&copy; 2022 Isaac Malebana</p>
     </div>
   </section>
- <script>
-   
+  <script>
+
     let img = document.getElementById('image');
 
     const toggleMenu = () => {
       document.querySelectorAll(".nav-responsive").forEach(el => {
-        if(el.style.height === "auto"){
+        if (el.style.height === "auto") {
           img.src = "./assets/menu.svg";
           el.style.height = 0;
-        }else{
+        } else {
           el.style.position = "absolute"
           img.src = "./assets/close.svg"
           el.style.height = "auto";
@@ -142,6 +150,7 @@
 
       })
     }
- </script>
+  </script>
 </body>
+
 </html>

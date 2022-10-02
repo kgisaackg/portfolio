@@ -193,7 +193,9 @@ img{
   height: 100%;
   width: 0;
   top: 0;
+  border-radius: 4px;
   overflow: hidden;
+  text-align: left;
 }
 
 .overlay-content{
@@ -204,6 +206,15 @@ img{
   opacity: 1;
   width: 100%;
   margin: auto;
+  padding: 10px 20px;
+}
+
+.overlay-content__link{
+  color: #fff;
+  border: 2px solid #fff;
+  max-width: fit-content;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .contact{
