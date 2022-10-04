@@ -206,7 +206,8 @@ img{
   opacity: 1;
   width: 100%;
   margin: auto;
-  padding: 10px 20px;
+  padding: 10px;
+  overflow-y: scroll;
 }
 
 .overlay-content__link{
@@ -264,7 +265,6 @@ img{
 
 .contact-card{
   flex-basis: 32%;
-  max-width: 300px;
   background-color: #000;
   border-radius: 40px;
   padding: 30px 12px;
@@ -369,11 +369,13 @@ input, textarea {
     justify-content: space-between;
   } 
 
+  .form__group-email{
+    margin-top: 0px;
+  }
 
-.form__group-email{
-  margin-top: 0px;
-}
-  
+  .contact-card{
+    max-width: 300px;
+  }  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
